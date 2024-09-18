@@ -2,7 +2,7 @@ site_name: Introduction to Quantum Computing simulation with PennyLane
 nav:
   - Course description: 'index.md'
   - FPGA computing for the HPC ecosystem: 'intro.md'
-  - QES with QCFPGA on JupyterLab: 'pennylane_presentation.ipynb'
+  - PennyLane with GPU on JupyterLab: 'pennylane_presentation.ipynb'
 
 site_description: Presentation of PennyLane for Quantum Computing 
 site_author: Wahid MAINASSARA
