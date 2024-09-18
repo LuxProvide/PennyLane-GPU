@@ -1,0 +1,4 @@
+ public
+ **/.*
+ profile.mon
+ notebooks/.ipynb_checkpoints*
