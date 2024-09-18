@@ -1,0 +1,125 @@
+site_name: Introduction to Quantum Computing simulation with PennyLane
+nav:
+  - Course description: 'index.md'
+  - FPGA computing for the HPC ecosystem: 'intro.md'
+  - QES with QCFPGA on JupyterLab: 'pennylane_presentation.ipynb'
+
+site_description: Presentation of PennyLane for Quantum Computing 
+site_author: Wahid MAINASSARA
+site_dir: public
+site_url: "https://LuxProvide.github.io/PennyLane-GPU"
+
+# Repository
+repo_name: LuxProvide/PennyLane-GPU
+repo_url: https://github.com/LuxProvide/PennyLane-GPU
+
+# Copyright
+copyright: Copyright &copy; 2024 LuxProvide
+
+
+# Configuration
+# strict: true
+
+theme:
+  name: material
+  logo: assets/LuxProvide_logo_white.svg
+  favicon: assets/favicon.png
+  custom_dir: overrides
+  language: en
+    #  palette:
+    #    primary: blue
+    #    accent:  light blue
+  features:
+    #    - navigation.instant
+    #- navigation.instant.prefetch
+    - navigation.expand
+    - content.code.copy
+    - content.code.select
+  # #   - tabs
+
+plugins:
+  - search # necessary for search to work
+  - git-revision-date-localized:
+      type: date
+      fallback_to_build_date: true
+  - progress
+  - include-markdown
+  - mkdocs-jupyter:
+      include_source: true
+      execute: false
+      allow_errors: false
+
+
+# Extra stylesheets (incl. Twitter Bootstrap)
+extra_css:
+  - stylesheets/extra.css
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css
+#  - https://unpkg.com/katex@0/dist/katex.min.css
+# - stylesheets/bootstrap.min.css
+
+# Extra javascript
+extra_javascript:
+  - javascripts/extra.js
+  - javascripts/bootstrap.min.js
+  #- https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js
+  # https://squidfunk.github.io/mkdocs-material/reference/data-tables/#sortable-tables
+  - https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.2.1/tablesort.min.js
+  - javascripts/tables.js
+  - javascripts/katex.js
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js  
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js
+#  - https://unpkg.com/katex@0/dist/katex.min.js
+#  - https://unpkg.com/katex@0/dist/contrib/auto-render.min.js
+
+
+#  - javascripts/mathjax.js
+#  - https://polyfill.io/v3/polyfill.min.js?features=es6
+#  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+
+
+# Extensions
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  # notes, warnings, hints, ...
+  - admonition
+  - codehilite:
+      guess_lang: true
+  - footnotes
+  - markdown_include.include:
+      base_path: docs
+  - markdown.extensions.admonition
+  - meta
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.details
+  # Icons from Emoji extensions, giving access to following icon sets:
+  # - Material Design: https://materialdesignicons.com/
+  # - FontAwesome:     https://fontawesome.com/icons?d=gallery&m=free
+  # – Octicons:        https://octicons.github.com/
+  # - pymdownx.emoji:
+  #     emoji_index: !!python/name:materialx.emoji.twemoji
+  #     emoji_generator: !!python/name:materialx.emoji.to_svg
+  # auto-link HTML, FTP, and email links
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      social_url_shorthand: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed
+  - pymdownx.smartsymbols
+  # code blocks with syntax highlighting, graphs
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - toc:
+      permalink: true
