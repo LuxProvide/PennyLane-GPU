@@ -1,7 +1,7 @@
 site_name: Introduction to Quantum Computing simulation with PennyLane
 nav:
   - Course description: 'index.md'
-  - PennyLane with GPU on JupyterLab: 'pennylane_presentation.ipynb'
+  - PennyLane with GPU on JupyterLab: 'pennylane_final.ipynb'
 
 site_description: Presentation of PennyLane for Quantum Computing 
 site_author: Wahid MAINASSARA
