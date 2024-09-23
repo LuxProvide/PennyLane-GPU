@@ -1,4 +1,17 @@
- public
- **/.*
- profile.mon
- notebooks/.ipynb_checkpoints*
+# Allow certain files or directories
+!public/
+!profile.mon
+!notebooks/
+
+# Ignore specific hidden directories or files
+notebooks/.ipynb_checkpoints*
+
+# Ignore specific file patterns
+slurm_controller.sbatch
+*.sif
+*.npy
+*.err
+*.out
+
+# Ignore specific directories
+save/quanvolution/*
